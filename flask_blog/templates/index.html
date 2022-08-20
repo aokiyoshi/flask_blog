@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for i in range(11) %}
+    <p>
+        <div class="post">
+            {% include 'post.html'   %}
+        </div>
+    {% endfor %}
+    </p>
+{% endblock %}
